@@ -13,6 +13,7 @@ body{
 }
 
 header{
+    /* Formats the header, specifically h1 */
     font-size: 50px;
     text-align: center;
     text-decoration: underline dotted #03045e;
@@ -34,22 +35,27 @@ h2, h3, h4{
     text-decoration: underline;
 }
 
+/* Descendant Combinator */
 ol li {
     list-style-type: "\1F44D";
 }
 
+/* Child Combinator */
 div > ul{
     background-color: purple;
 }
 
+/* Combining Two Selectors */
 section.meeting{
     text-decoration: underline;
 }
 
+/* General Sibling Combinator */
 section.meetingsummary ~ p{
     text-decoration: overline;
 }
 
+/* Adjacent Sibling Combinator */
 section.mainPoints + p{
     background-color: brown;
 }

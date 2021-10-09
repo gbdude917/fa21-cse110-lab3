@@ -1,0 +1,134 @@
+body{
+    background-color: #00b4d8;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+      background-color: red;
+    }
+}
+
+*{
+    font-family: 'Ephesis', cursive;
+}
+
+header{
+    /* Formats the header, specifically h1 */
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline dotted #03045e;
+
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+
+    position: relative;
+}
+
+h2, h3, h4{
+    text-decoration: underline;
+}
+
+/* Descendant Combinator */
+ol li {
+    list-style-type: "\1F44D";
+}
+
+/* Child Combinator */
+div > ul{
+    background-color: purple;
+}
+
+/* Combining Two Selectors */
+section.meeting{
+    text-decoration: underline;
+}
+
+/* General Sibling Combinator */
+section.meetingsummary ~ p{
+    text-decoration: overline;
+}
+
+/* Adjacent Sibling Combinator */
+section.mainPoints + p{
+    background-color: brown;
+}
+
+nav{
+    text-align: center; 
+}
+
+.repoLink{
+    font-size: 25px;
+    color: blue; 
+}
+
+.repoLink:active{
+    color: red;
+}
+
+.picture{
+    margin-left: 23em;
+    margin-bottom: 5em;
+
+    height: 30em;
+    width: 45em;
+
+    max-width: 100em;
+    max-height: 100em;
+
+    position: static;
+}
+
+main{
+    background-color: hsl(262, 89%, 84%);
+}
+
+.meetingsummary{
+    border-style: groove;
+    border-color: black;
+    border-width: 0.5em;
+    border-radius: 2px;
+}
+
+.agenda{
+    margin: auto;
+    padding: 1em, 1em, 1em, 1em;   
+    display: block;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+}
+
+.footer{
+    text-align: center; 
+}
+
+#link{
+    color: rgb(0,0,0);
+}
+
+#link:hover{
+    color: rgb(255,255,255);
+}
+
+hr{
+    display: none;
+}

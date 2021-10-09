@@ -6,20 +6,26 @@
         <link rel="icon"
               type="img/png"
               href="https://upload.wikimedia.org/wikipedia/en/d/d0/Dogecoin_Logo.png">
+        <link rel="stylesheet" href="style.css">
     </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+    </style>
+
     <body>
         <header>
             <h1><b>Team Meeting #1</b></h1>
         </header>
 
         <nav>
-            <p><a href=https://github.com/gbdude917/Lab2>Lab 2 Repo</a></p>
+            <p><a class="repoLink" href=https://github.com/gbdude917/Lab2 target="background">Lab 2 Repo</a></p>
         </nav> 
-        <img src="https://t3.ftcdn.net/jpg/04/00/27/18/360_F_400271848_F6VOYPfgKC34jDHQnQ1tPvheNQkDdnHj.jpg"
+        <img class="picture" src="https://t3.ftcdn.net/jpg/04/00/27/18/360_F_400271848_F6VOYPfgKC34jDHQnQ1tPvheNQkDdnHj.jpg"
              alt="Team picture">
         <hr>
         <main>
-            <section>
+            <section class="meetingsummary">
                 <details>
                     <summary>
                         Meeting Summary
@@ -27,10 +33,10 @@
                     Introductions and contact info exchanged; next meeting next Friday.
                 </details>
             </section>
-            <section>
+            <section class="agenda">
                 <h2><b>Agenda</b></h2>
                 <span></span>
-                 <ol>
+                <ol>
                     <li><i>Introductions/Icebreakers</i></li>
                     <li>Formulate ideas for project.</li>
                     <li>Exchange contact information.</li>
@@ -39,7 +45,8 @@
                 <hr>
             </section>
 
-            <section>
+            <p>General Sibling Combinator</p>
+            <section class="mainPoints">
                 <h3><b>Main Points</b></h3>
                 <div>
                     <ul>
@@ -52,14 +59,15 @@
                 <hr>
             </section>
 
-            <section>
+            <p>Adjacent Sibling Combinator</p>
+            <section class="meeting">
                 <h4><b>Next Meeting Date</b></h4>
                 <p><b><em>October 8, 2021 at 12:30 PM</em></b></p>
                 <br>
                 <hr>
             </section>
 
-            <section>
+            <section class="media">
                 <h4><b>Video/Aduio of Meeting</b></h4>
                 <video controls width="320" height="240"
                        src="screenshots/video.mp4">
@@ -129,11 +137,11 @@
                 </fieldset>
             </form>
         </main>
-
-        <footer>
-            <hr>
-            <p>Author: Gabriel Leong</p>
-            <p>Github: <a href="https://github.com/gbdude917">gbdude917</a></p>
-        </footer>
     </body>
+
+    <footer>
+        <hr>
+        <p class="footer">Author: Gabriel Leong</p>
+        <p class="footer">Github: <a id="link" href="https://github.com/gbdude917" target="other">gbdude917</a></p>
+    </footer>
 </html>
